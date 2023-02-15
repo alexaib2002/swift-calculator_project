@@ -119,7 +119,7 @@
                                             <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KUm-Fn-BYa">
                                                 <rect key="frame" x="262.5" y="0.0" width="111.5" height="88.5"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="gray" title="B" cornerStyle="large"/>
+                                                <buttonConfiguration key="configuration" style="gray" title="=" cornerStyle="large"/>
                                             </button>
                                         </subviews>
                                     </stackView>
