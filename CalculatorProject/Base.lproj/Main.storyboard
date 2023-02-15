@@ -10,7 +10,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CalculatorProject" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CalculatorProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -34,135 +34,180 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="0Hm-CL-KcZ" customClass="ButtonRow">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="88.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="65.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lih-5M-D8R">
-                                                <rect key="frame" x="0.0" y="0.0" width="111.5" height="88.5"/>
-                                                <accessibility key="accessibilityConfiguration" hint="Divide"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="111.5" height="65.5"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="gray" title="/" cornerStyle="large"/>
+                                                <buttonConfiguration key="configuration" style="gray" title="AC" cornerStyle="large"/>
                                                 <connections>
-                                                    <action selector="setOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xUG-qb-vaj"/>
+                                                    <action selector="onClearButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="S36-R4-RX6"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lgJ-iZ-Xje">
-                                                <rect key="frame" x="131.5" y="0.0" width="111" height="88.5"/>
+                                                <rect key="frame" x="131.5" y="0.0" width="111" height="65.5"/>
                                                 <accessibility key="accessibilityConfiguration" hint="Multiply"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="gray" title="*" cornerStyle="large"/>
                                                 <connections>
-                                                    <action selector="setOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ky8-vM-8Ya"/>
+                                                    <action selector="setOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MDC-AF-ZiL"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WV9-FH-WBG">
-                                                <rect key="frame" x="262.5" y="0.0" width="111.5" height="88.5"/>
-                                                <accessibility key="accessibilityConfiguration" hint="Module"/>
+                                                <rect key="frame" x="262.5" y="0.0" width="111.5" height="65.5"/>
+                                                <accessibility key="accessibilityConfiguration" hint="Divide"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="gray" title="%" cornerStyle="large"/>
+                                                <buttonConfiguration key="configuration" style="gray" title="/" cornerStyle="large"/>
                                                 <connections>
-                                                    <action selector="setOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ch5-AZ-vac"/>
+                                                    <action selector="setOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vwp-Lk-AfU"/>
                                                 </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ioh-uR-9SA" customClass="ButtonRow">
-                                        <rect key="frame" x="0.0" y="114.5" width="374" height="88.5"/>
+                                        <rect key="frame" x="0.0" y="91.5" width="374" height="65.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7e3-Aj-dpP">
-                                                <rect key="frame" x="0.0" y="0.0" width="78.5" height="88.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="78.5" height="65.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="gray" title="7" cornerStyle="large"/>
                                                 <connections>
-                                                    <action selector="onNbrButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VCG-Am-2jv"/>
+                                                    <action selector="onNbrButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JSe-Ee-h2c"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m4q-x7-NO1">
-                                                <rect key="frame" x="98.5" y="0.0" width="78.5" height="88.5"/>
+                                                <rect key="frame" x="98.5" y="0.0" width="78.5" height="65.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="gray" title="8" cornerStyle="large"/>
                                                 <connections>
-                                                    <action selector="onNbrButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Uli-rF-xCn"/>
+                                                    <action selector="onNbrButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IHu-dl-MD9"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z0N-mz-G3q">
-                                                <rect key="frame" x="197" y="0.0" width="78.5" height="88.5"/>
+                                                <rect key="frame" x="197" y="0.0" width="78.5" height="65.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="gray" title="9" cornerStyle="large"/>
                                                 <connections>
-                                                    <action selector="onNbrButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4ss-Ac-nl2"/>
+                                                    <action selector="onNbrButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pIK-Oq-lxk"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ud-IL-VjL">
-                                                <rect key="frame" x="295.5" y="0.0" width="78.5" height="88.5"/>
+                                                <rect key="frame" x="295.5" y="0.0" width="78.5" height="65.5"/>
                                                 <accessibility key="accessibilityConfiguration" hint="Substract"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="gray" title="-" cornerStyle="large"/>
                                                 <connections>
-                                                    <action selector="setOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="17C-Uv-Hnm"/>
+                                                    <action selector="setOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dBW-5y-uPn"/>
                                                 </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Trs-Ig-uwK" customClass="ButtonRow">
-                                        <rect key="frame" x="0.0" y="229" width="374" height="88.5"/>
+                                        <rect key="frame" x="0.0" y="183" width="374" height="66"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6jM-Xn-9c4">
-                                                <rect key="frame" x="0.0" y="0.0" width="78.5" height="88.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="78.5" height="66"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="gray" title="4" cornerStyle="large"/>
                                                 <connections>
-                                                    <action selector="onNbrButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mnd-dS-PEV"/>
+                                                    <action selector="onNbrButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="asd-NS-qHy"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yfu-UE-esD">
-                                                <rect key="frame" x="98.5" y="0.0" width="78.5" height="88.5"/>
+                                                <rect key="frame" x="98.5" y="0.0" width="78.5" height="66"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="gray" title="5" cornerStyle="large"/>
                                                 <connections>
-                                                    <action selector="nbrButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FCa-6x-d7b"/>
+                                                    <action selector="onNbrButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="psC-Qe-Dix"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YyE-sr-jsj">
-                                                <rect key="frame" x="197" y="0.0" width="78.5" height="88.5"/>
+                                                <rect key="frame" x="197" y="0.0" width="78.5" height="66"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="gray" title="6" cornerStyle="large"/>
                                                 <connections>
-                                                    <action selector="onNbrButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hAf-4F-XTr"/>
+                                                    <action selector="onNbrButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pXN-uN-zKt"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DF9-Cq-fax">
-                                                <rect key="frame" x="295.5" y="0.0" width="78.5" height="88.5"/>
+                                                <rect key="frame" x="295.5" y="0.0" width="78.5" height="66"/>
                                                 <accessibility key="accessibilityConfiguration" hint="Sum"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="gray" title="+" cornerStyle="large"/>
                                                 <connections>
-                                                    <action selector="setOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EwD-5y-FU0"/>
+                                                    <action selector="setOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Ss-4H-6aP"/>
                                                 </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="hdT-Jv-fT1" customClass="ButtonRow">
-                                        <rect key="frame" x="0.0" y="343.5" width="374" height="88.5"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="rvV-C8-ifz" customClass="ButtonRow">
+                                        <rect key="frame" x="0.0" y="275" width="374" height="65.5"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qgs-FN-C7l">
-                                                <rect key="frame" x="0.0" y="0.0" width="111.5" height="88.5"/>
+                                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3YT-Ld-wY2">
+                                                <rect key="frame" x="0.0" y="0.0" width="78.5" height="65.5"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="gray" title="0" cornerStyle="large"/>
+                                                <buttonConfiguration key="configuration" style="gray" title="1" cornerStyle="large"/>
                                                 <connections>
-                                                    <action selector="onNbrButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ixP-hj-9da"/>
+                                                    <action selector="onNbrButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QM4-Rn-EHo"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="psI-db-f34">
-                                                <rect key="frame" x="131.5" y="0.0" width="111" height="88.5"/>
+                                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Rl-KS-F3M">
+                                                <rect key="frame" x="98.5" y="0.0" width="78.5" height="65.5"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="gray" title="." cornerStyle="large"/>
+                                                <buttonConfiguration key="configuration" style="gray" title="2" cornerStyle="large"/>
+                                                <connections>
+                                                    <action selector="onNbrButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OIs-x6-iXk"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KUm-Fn-BYa">
-                                                <rect key="frame" x="262.5" y="0.0" width="111.5" height="88.5"/>
+                                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z96-jd-zX5">
+                                                <rect key="frame" x="197" y="0.0" width="78.5" height="65.5"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="gray" title="3" cornerStyle="large"/>
+                                                <connections>
+                                                    <action selector="onNbrButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1jt-V5-81X"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rSA-Q1-Oso">
+                                                <rect key="frame" x="295.5" y="0.0" width="78.5" height="65.5"/>
+                                                <accessibility key="accessibilityConfiguration" hint="Module"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="gray" title="%" cornerStyle="large"/>
+                                                <connections>
+                                                    <action selector="setOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WOJ-4V-d2W"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="hdT-Jv-fT1" customClass="ButtonRow">
+                                        <rect key="frame" x="0.0" y="366.5" width="374" height="65.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="CuT-ta-TaL">
+                                                <rect key="frame" x="0.0" y="0.0" width="177" height="65.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4CX-tE-oRa">
+                                                        <rect key="frame" x="0.0" y="0.0" width="78.5" height="65.5"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="gray" title="0" cornerStyle="large"/>
+                                                        <connections>
+                                                            <action selector="onNbrButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ao8-md-NvH"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kye-M2-tYc">
+                                                        <rect key="frame" x="98.5" y="0.0" width="78.5" height="65.5"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="gray" title="," cornerStyle="large"/>
+                                                        <connections>
+                                                            <action selector="onPeriodPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="VJ2-g6-t6C"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oCp-Qq-IiG">
+                                                <rect key="frame" x="197" y="0.0" width="177" height="65.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="gray" title="=" cornerStyle="large"/>
                                                 <connections>
-                                                    <action selector="onEnterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xzy-PN-WK9"/>
+                                                    <action selector="onEnterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3sg-dr-bEN"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -176,7 +221,7 @@
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <connections>
-                        <outlet property="resultLbl" destination="MSF-vP-qbH" id="vPJ-Fu-sRJ"/>
+                        <outlet property="resultLbl" destination="MSF-vP-qbH" id="ifa-Ca-r3M"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
