@@ -39,7 +39,10 @@
                                             <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lih-5M-D8R">
                                                 <rect key="frame" x="0.0" y="0.0" width="111.5" height="65.5"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="gray" title="AC" cornerStyle="large"/>
+                                                <buttonConfiguration key="configuration" style="gray" title="AC" cornerStyle="large">
+                                                    <color key="baseForegroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                                    <color key="baseBackgroundColor" systemColor="systemRedColor"/>
+                                                </buttonConfiguration>
                                                 <connections>
                                                     <action selector="onClearButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="S36-R4-RX6"/>
                                                 </connections>
@@ -48,7 +51,10 @@
                                                 <rect key="frame" x="131.5" y="0.0" width="111" height="65.5"/>
                                                 <accessibility key="accessibilityConfiguration" hint="Multiply"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="gray" title="*" cornerStyle="large"/>
+                                                <buttonConfiguration key="configuration" style="gray" title="*" cornerStyle="large">
+                                                    <color key="baseForegroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                                    <color key="baseBackgroundColor" systemColor="systemOrangeColor"/>
+                                                </buttonConfiguration>
                                                 <connections>
                                                     <action selector="setOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MDC-AF-ZiL"/>
                                                 </connections>
@@ -57,7 +63,10 @@
                                                 <rect key="frame" x="262.5" y="0.0" width="111.5" height="65.5"/>
                                                 <accessibility key="accessibilityConfiguration" hint="Divide"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="gray" title="/" cornerStyle="large"/>
+                                                <buttonConfiguration key="configuration" style="gray" title="/" cornerStyle="large">
+                                                    <color key="baseForegroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                                    <color key="baseBackgroundColor" systemColor="systemOrangeColor"/>
+                                                </buttonConfiguration>
                                                 <connections>
                                                     <action selector="setOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vwp-Lk-AfU"/>
                                                 </connections>
@@ -70,7 +79,10 @@
                                             <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7e3-Aj-dpP">
                                                 <rect key="frame" x="0.0" y="0.0" width="78.5" height="65.5"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="gray" title="7" cornerStyle="large"/>
+                                                <buttonConfiguration key="configuration" style="gray" title="7" cornerStyle="large">
+                                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                                    <color key="baseBackgroundColor" systemColor="systemGray5Color"/>
+                                                </buttonConfiguration>
                                                 <connections>
                                                     <action selector="onNbrButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JSe-Ee-h2c"/>
                                                 </connections>
@@ -78,7 +90,10 @@
                                             <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m4q-x7-NO1">
                                                 <rect key="frame" x="98.5" y="0.0" width="78.5" height="65.5"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="gray" title="8" cornerStyle="large"/>
+                                                <buttonConfiguration key="configuration" style="gray" title="8" cornerStyle="large">
+                                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                                    <color key="baseBackgroundColor" systemColor="systemGray5Color"/>
+                                                </buttonConfiguration>
                                                 <connections>
                                                     <action selector="onNbrButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IHu-dl-MD9"/>
                                                 </connections>
@@ -86,7 +101,10 @@
                                             <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z0N-mz-G3q">
                                                 <rect key="frame" x="197" y="0.0" width="78.5" height="65.5"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="gray" title="9" cornerStyle="large"/>
+                                                <buttonConfiguration key="configuration" style="gray" title="9" cornerStyle="large">
+                                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                                    <color key="baseBackgroundColor" systemColor="systemGray5Color"/>
+                                                </buttonConfiguration>
                                                 <connections>
                                                     <action selector="onNbrButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pIK-Oq-lxk"/>
                                                 </connections>
@@ -95,7 +113,10 @@
                                                 <rect key="frame" x="295.5" y="0.0" width="78.5" height="65.5"/>
                                                 <accessibility key="accessibilityConfiguration" hint="Substract"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="gray" title="-" cornerStyle="large"/>
+                                                <buttonConfiguration key="configuration" style="gray" title="-" cornerStyle="large">
+                                                    <color key="baseForegroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                                    <color key="baseBackgroundColor" systemColor="systemOrangeColor"/>
+                                                </buttonConfiguration>
                                                 <connections>
                                                     <action selector="setOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dBW-5y-uPn"/>
                                                 </connections>
@@ -108,7 +129,10 @@
                                             <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6jM-Xn-9c4">
                                                 <rect key="frame" x="0.0" y="0.0" width="78.5" height="66"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="gray" title="4" cornerStyle="large"/>
+                                                <buttonConfiguration key="configuration" style="gray" title="4" cornerStyle="large">
+                                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                                    <color key="baseBackgroundColor" systemColor="systemGray5Color"/>
+                                                </buttonConfiguration>
                                                 <connections>
                                                     <action selector="onNbrButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="asd-NS-qHy"/>
                                                 </connections>
@@ -116,7 +140,10 @@
                                             <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yfu-UE-esD">
                                                 <rect key="frame" x="98.5" y="0.0" width="78.5" height="66"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="gray" title="5" cornerStyle="large"/>
+                                                <buttonConfiguration key="configuration" style="gray" title="5" cornerStyle="large">
+                                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                                    <color key="baseBackgroundColor" systemColor="systemGray5Color"/>
+                                                </buttonConfiguration>
                                                 <connections>
                                                     <action selector="onNbrButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="psC-Qe-Dix"/>
                                                 </connections>
@@ -124,7 +151,10 @@
                                             <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YyE-sr-jsj">
                                                 <rect key="frame" x="197" y="0.0" width="78.5" height="66"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="gray" title="6" cornerStyle="large"/>
+                                                <buttonConfiguration key="configuration" style="gray" title="6" cornerStyle="large">
+                                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                                    <color key="baseBackgroundColor" systemColor="systemGray5Color"/>
+                                                </buttonConfiguration>
                                                 <connections>
                                                     <action selector="onNbrButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pXN-uN-zKt"/>
                                                 </connections>
@@ -133,7 +163,10 @@
                                                 <rect key="frame" x="295.5" y="0.0" width="78.5" height="66"/>
                                                 <accessibility key="accessibilityConfiguration" hint="Sum"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="gray" title="+" cornerStyle="large"/>
+                                                <buttonConfiguration key="configuration" style="gray" title="+" cornerStyle="large">
+                                                    <color key="baseForegroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                                    <color key="baseBackgroundColor" systemColor="systemOrangeColor"/>
+                                                </buttonConfiguration>
                                                 <connections>
                                                     <action selector="setOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Ss-4H-6aP"/>
                                                 </connections>
@@ -146,7 +179,10 @@
                                             <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3YT-Ld-wY2">
                                                 <rect key="frame" x="0.0" y="0.0" width="78.5" height="65.5"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="gray" title="1" cornerStyle="large"/>
+                                                <buttonConfiguration key="configuration" style="gray" title="1" cornerStyle="large">
+                                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                                    <color key="baseBackgroundColor" systemColor="systemGray5Color"/>
+                                                </buttonConfiguration>
                                                 <connections>
                                                     <action selector="onNbrButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QM4-Rn-EHo"/>
                                                 </connections>
@@ -154,7 +190,10 @@
                                             <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Rl-KS-F3M">
                                                 <rect key="frame" x="98.5" y="0.0" width="78.5" height="65.5"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="gray" title="2" cornerStyle="large"/>
+                                                <buttonConfiguration key="configuration" style="gray" title="2" cornerStyle="large">
+                                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                                    <color key="baseBackgroundColor" systemColor="systemGray5Color"/>
+                                                </buttonConfiguration>
                                                 <connections>
                                                     <action selector="onNbrButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OIs-x6-iXk"/>
                                                 </connections>
@@ -162,7 +201,10 @@
                                             <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z96-jd-zX5">
                                                 <rect key="frame" x="197" y="0.0" width="78.5" height="65.5"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="gray" title="3" cornerStyle="large"/>
+                                                <buttonConfiguration key="configuration" style="gray" title="3" cornerStyle="large">
+                                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                                    <color key="baseBackgroundColor" systemColor="systemGray5Color"/>
+                                                </buttonConfiguration>
                                                 <connections>
                                                     <action selector="onNbrButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1jt-V5-81X"/>
                                                 </connections>
@@ -171,7 +213,10 @@
                                                 <rect key="frame" x="295.5" y="0.0" width="78.5" height="65.5"/>
                                                 <accessibility key="accessibilityConfiguration" hint="Module"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="gray" title="%" cornerStyle="large"/>
+                                                <buttonConfiguration key="configuration" style="gray" title="%" cornerStyle="large">
+                                                    <color key="baseForegroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                                    <color key="baseBackgroundColor" systemColor="systemOrangeColor"/>
+                                                </buttonConfiguration>
                                                 <connections>
                                                     <action selector="setOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WOJ-4V-d2W"/>
                                                 </connections>
@@ -187,7 +232,10 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4CX-tE-oRa">
                                                         <rect key="frame" x="0.0" y="0.0" width="78.5" height="65.5"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="gray" title="0" cornerStyle="large"/>
+                                                        <buttonConfiguration key="configuration" style="gray" title="0" cornerStyle="large">
+                                                            <color key="baseForegroundColor" systemColor="labelColor"/>
+                                                            <color key="baseBackgroundColor" systemColor="systemGray5Color"/>
+                                                        </buttonConfiguration>
                                                         <connections>
                                                             <action selector="onNbrButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ao8-md-NvH"/>
                                                         </connections>
@@ -195,7 +243,10 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kye-M2-tYc">
                                                         <rect key="frame" x="98.5" y="0.0" width="78.5" height="65.5"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="gray" title="," cornerStyle="large"/>
+                                                        <buttonConfiguration key="configuration" style="gray" title="," cornerStyle="large">
+                                                            <color key="baseForegroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                                            <color key="baseBackgroundColor" systemColor="systemOrangeColor"/>
+                                                        </buttonConfiguration>
                                                         <connections>
                                                             <action selector="onPeriodPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="VJ2-g6-t6C"/>
                                                         </connections>
@@ -205,7 +256,10 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oCp-Qq-IiG">
                                                 <rect key="frame" x="197" y="0.0" width="177" height="65.5"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="gray" title="=" cornerStyle="large"/>
+                                                <buttonConfiguration key="configuration" style="gray" title="=" cornerStyle="large">
+                                                    <color key="baseForegroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                                    <color key="baseBackgroundColor" systemColor="systemGreenColor"/>
+                                                </buttonConfiguration>
                                                 <connections>
                                                     <action selector="onEnterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3sg-dr-bEN"/>
                                                 </connections>
@@ -229,4 +283,24 @@
             <point key="canvasLocation" x="34.782608695652179" y="97.767857142857139"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
